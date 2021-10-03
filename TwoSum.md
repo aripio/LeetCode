@@ -39,11 +39,13 @@ Output: [0,1]
 
 ### 解题思路
 这道题用暴力解法的话可以用一个嵌套的for循环来枚举数组中的每一对不同的数(a,b):
+
 1. 如果找到满足条件的一对(a,b)使得 a + b = target，则立即返回a和b对应的index
 2. 如果循环结束依旧没有找到，则返回nil。
+
 这个解法的复杂度是O(n^2)，不符合题目的要求。
 
-由于题目中要求返回找到的数字对应的index，所以不能对数组进行排序后再用Two Pointer，否则index都乱掉了。所以本题只能用哈希表。哈希表T的Key是数组中的元素，Value是数组中该元素的index。初始时T为空，我们开始对数组进行顺次遍历。遍历过程中，假设当前访问的数组元素为a，则去T中查找是否存在target-a，如果存在则返回a的index和T(target - a)。如果遍历结束依旧没有找到，则返回nil。
+由于题目中要求返回找到的数字对应的index，所以不能对数组进行排序后再用Two Pointer，否则index都乱掉了。所以本题只能用哈希表。哈希表T的Key是数组中的元素，Value是数组中该元素的index。初始时T为空，我们开始对数组进行顺次遍历。遍历过程中，假设当前访问的数组元素为a，则去T中查找是否存在target-a，如果存在则返回a的index和T(target - a)。如果遍历结束依旧没有找到，则返回nil。代码如下：
 ```
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     hashTable = {}
