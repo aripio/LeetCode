@@ -49,13 +49,11 @@ Output: [0,1]
 ```
 def twoSum(self, nums: List[int], target: int) -> List[int]:
     hashTable = {}
-    for i in range(len(nums)):
-        c = target - nums[i]
+    for i, num in enumerate(nums):
+        c = target - num
         if c in hashTable:
-            return [i, hashTable[c]]
-        else:
-            hashTable[nums[i]] = i
-    return nil
+            return [hashTable[c], i]
+        hashTable[num] = i
 ```
 以上解法的时间复杂度是O(n),因为线性遍历了数组，且对每个数组成员的访问时间是常量。空间复杂度也为O(n)，因为最坏情况下哈希表容纳数组中所有元素。
 
