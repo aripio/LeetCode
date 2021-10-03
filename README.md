@@ -1,5 +1,5 @@
 # 目录
-1. [Two Sum](https://github.com/aripio/LeetCode/edit/main/TwoSum.md)
+1. [Two Sum](https://aripio.github.io/LeetCode/TwoSum)
 
 ## Welcome to GitHub Pages
 
