@@ -1,5 +1,6 @@
 # 目录
 1. [Two Sum](https://aripio.github.io/LeetCode/TwoSum)
+2. [Add Two Numbers](https://aripio.github.io/LeetCode/AddTwoNumbers)
 
 ## Welcome to GitHub Pages
 
