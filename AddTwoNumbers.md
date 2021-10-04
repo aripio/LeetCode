@@ -61,7 +61,7 @@ class Solution:
                 currentNode.next = ListNode(1)
         return head.next
 ```
-以上解法的时间负责度是O(n)，因为需要线性遍历两个输入链表，空间复杂度是O(1)。
+以上解法的时间复杂度是O(n)，因为需要线性遍历两个输入链表，空间复杂度是O(1)。
 
 
 
