@@ -1,6 +1,4 @@
 # 用Python解LeetCode
-
-# 目录
 1. [Two Sum](https://aripio.github.io/LeetCode/TwoSum)
 2. [Add Two Numbers](https://aripio.github.io/LeetCode/AddTwoNumbers)
 3. [Longest Substring Without Repeating Characters](https://aripio.github.io/LeetCode/LongestSubstringWithoutRepeatingCharacters)
