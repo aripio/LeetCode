@@ -43,7 +43,7 @@ Output: 0
 循环退出条件是右指针指向了字符串的右边界。
 
 中间判断是否包含重复字符可以利用哈希表去做。这里哈希表的Key是单个的字符，Value是字符在字符串中对应的index的下一位。这样依次遍历数组的时候当右指针访问到一个已经在哈希表中存在的字符时，可以将左指针直接移到这个字符在哈希表里对应的Value。这样就保证了从左指针开始到右指针结束都不包含重复的字符。
-···
+```
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         l = 0
@@ -55,7 +55,7 @@ class Solution:
             result = max(result, r - l + 1)
             mp[s[r]] = r + 1
         return result
-···
+```
 以上解法的时间复杂度是O(n)，因为线性遍历了一遍数组，空间复杂度是O(n)，因为维护了额外的哈希表。
 
 
