@@ -1,4 +1,4 @@
-用Python解LeetCode
+# 用Python解LeetCode
 
 # 目录
 1. [Two Sum](https://aripio.github.io/LeetCode/TwoSum)
