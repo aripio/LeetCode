@@ -5,8 +5,6 @@
 2. [Add Two Numbers](https://aripio.github.io/LeetCode/AddTwoNumbers)
 3. [Longest Substring Without Repeating Characters](https://aripio.github.io/LeetCode/LongestSubstringWithoutRepeatingCharacters)
 
-编程语言: Python
-
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/aripio/LeetCode/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
